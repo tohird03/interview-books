@@ -271,8 +271,37 @@ JAVASCRIPT
 
 		name = "Ali"
 	
-5 
-		
+5 Javascriptda o'zgaruvchilar necha xil usulda e'lon qilinadi?
+	Javascriptda o'zgaruvchilarni 4 xil usulda e'lon qilishimiz mumkin.
+		1) var
+		2) let 
+		3) const
+		4) Hech narsa bilan
+6 let va var farqi nimada?
+	let hoistinga uchramaydi va u ES6 (2015-yilidan keyin) dan keyin yaratilgan. var esa hoistinga uchraydi va javascript yaralganda faqat vardan foydalanishgan.
+7 let va const farqi?
+	letda o'zgaruvchan qiymatlar bersak bo'ladi, ya'ni letdagi o'zgaruvchini qiymatini keyinchalik o'zgartirib ketsak bo'ladi. constda esa keyinchalik qiymatni o'zgartirib bo'lmaydi.
+8 Qanaqa javascript operatorlar mavjud?
+	1-Arifmetik operatorlar
+		+, -, *, /, **, %, ++, --
+	
+	2- Assignment Operators (Belgilash operatorlari)
+		=, +=, -=, *=, /=, %=, **
+	3- Comparison Operators (Taqqoslash operatorlari)
+		==, ===, !=, !==, >, <, >=, <=, ?
+	4- Logical Operators (Mantiqiy operatorlar)
+		&&, ||, !
+	5- Type Operators
+		typeof, instanceof
+		 
+9 == va === farqi nimada?
+	== bu ma'lumotni faqat qiymatini tekshiradi. === bu esa ma'lumotni ham qiymati ham type bilan tekshiradi.
+
+10 && "va" qachon to'xtaydi?
+	&& "va" false qiymat topguncha ishlaydi, va  o'sha falseni chiqarib beradi.
+		console.log(true && 1 && "salom" && false && 10) // false.  agar hammasi true bo'lsa eng oxirgi trueni chiqaradi
+
+		 
 
 
 
