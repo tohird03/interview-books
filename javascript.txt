@@ -4,17 +4,17 @@ Javascriptda asinxron kodlar yani settimeout, setintervallar callback queda saql
 	npm - node package manager Javascript dasturlash tili uchun paket manager hisoblanadi. Unda javascript kodimizni oson ishlatishimiz tayyor kodlar mavjud.
 2 Nodejs o'zi nima?
 	Javascript kodimizni brauzerdan tashqarida ishlatishimiz uchun run time environment
-	(Real timeda ishlovchi muhit) Nodejs brauzerdan tashqarida ishlashi uchun Google chromening 
+	(Real timeda ishlovchi muhit) Nodejs brauzerdan tashqarida ishlashi uchun Google chromening
 	V8 enginedan foydalangan. Nodejs non-blocking IO hisoblanadi u libyumizni blocklab qo'ymaydi.
 3 V8 engine nima?
-	V8 enginimiz Google Chrome tomonidan ishlab chiqilgan va bizning javascript kodimizni 
+	V8 enginimiz Google Chrome tomonidan ishlab chiqilgan va bizning javascript kodimizni
 	mashin kodga o'girib beruvchi divegatel hisoblanadi. Bu Google brauzerida mavjud shuning uchun
 	Javascript kodimiz brauzerda ishlaydi.
 4 Libuv nima?
-	Libuv qisqa qilib aytganda I/O amalga oshirish uchun kutubxona hisoblanadi. 
-	Javascript to'g'ridan to'g'ri Operatsion sistemamizga murojat qilolmaydi 
-	shuning uchun C da qurilgan libuv orqali operatsion sistemamizga murojat 
-	qilsak bo'ladi, file'lar bilan ishlasak bo'ladi, yaratayotgan proektimizni 
+	Libuv qisqa qilib aytganda I/O amalga oshirish uchun kutubxona hisoblanadi.
+	Javascript to'g'ridan to'g'ri Operatsion sistemamizga murojat qilolmaydi
+	shuning uchun C da qurilgan libuv orqali operatsion sistemamizga murojat
+	qilsak bo'ladi, file'lar bilan ishlasak bo'ladi, yaratayotgan proektimizni
 	internetga ulanishini ham libuv ta'milab beradi.
 ?????????
 5 Nodejs single threadedmi yo Multi threadedmi?
@@ -25,7 +25,7 @@ Javascriptda asinxron kodlar yani settimeout, setintervallar callback queda saql
 7 Nodejsni qanday qilib Multi-threaded qilishimiz mumkin?
 	child-proces module bilan multi-threaded qilishimiz mumkin. SPAN, EXEST, FORK mavjud. SHular orqali biz childlarga bo'lib olishimiz mumkin.
 8 Nodejsda Event Loop nima?
-	Event loop doimiy aylanib turadi va kodlarimizni, Funksiyalarimizni Call Stakga Variablelarni esa Memory hibga joylab chiqadi. Va shu tarizda u bir client requiestini Threaded 
+	Event loop doimiy aylanib turadi va kodlarimizni, Funksiyalarimizni Call Stakga Variablelarni esa Memory hibga joylab chiqadi. Va shu tarizda u bir client requiestini Threaded
 	Poolga yani FileSystem, Network, Database va hakazolarga Jo'natib va unda responsni olib clientga yuborish uchun doimiy aylanib turivchi loop hisoblanadi.
 9 Callback deganda nimani tushunasiz?
 	Bitta funksiya bajarilganda boshqa funksiyani return qilishi callback deyiladi.
@@ -45,39 +45,39 @@ Javascriptda asinxron kodlar yani settimeout, setintervallar callback queda saql
 11 Callback helldan qutilish yo'li qanday, yani asynchron kod yozish?
 	async await bilan biz callbackdan qutilishimiz mumkin
 12 Nodejsda middlewares vazifasi nima?
-	Biz clientdan request qabul qilib uni biror bir shart bo'yicha tekshirib agar shartga mos tushsa clientga responseni qaytarib yuborishimizdir. bunda request va response orasida 
+	Biz clientdan request qabul qilib uni biror bir shart bo'yicha tekshirib agar shartga mos tushsa clientga responseni qaytarib yuborishimizdir. bunda request va response orasida
 	bo'ladi va shart bajarilsa next bo'ladi va response jo'natishimiz mumkin
 13 Nodejsda core modullar haqida?
 	Nodejsda core modullar libuv ichida mavjud va biz ularni install qilmay turib shunchaki chaqirib ichlatib ketishimiz mumkin. Nodejsda core modullar FS, OS, HTTP, PATH, URL
-	shular nodejs core modullar hisoblanadi 
+	shular nodejs core modullar hisoblanadi
 14 FS nima vazifani bajaradi?
 	FS file system deyiladi va u bilan biz filelar bilan ishlashimiz mumkin. file yaratish o'chirish, file ichiga ma'lumotlar yozish va hakazolardir (read, write, open, appendFile)
 15 OS nima?
 	OS operation system deyiladi va u yordamida kompyuterimiz ma'lumotlarini bilishimiz va ular bilan ishlashimiz uchun yordam beradi.
 16 HTTP nima?
-	HTTP Hypertext Transfer Protocol degan ma'noni anglatadi. Bu WWW (World Wide Web) da audio, video, grafik tasvir, matn va boshqa multimedia fayllari kabi fayllarni uzatish 
-	uchun foydalaniladigan qoidalar to'plamidir.  HTTP hech qanday xavfsizlikka ega emas. Qachonki foydalanuvchi o'z veb-brauzerini ochsa, bu foydalanuvchi bilvosita HTTP-dan 
+	HTTP Hypertext Transfer Protocol degan ma'noni anglatadi. Bu WWW (World Wide Web) da audio, video, grafik tasvir, matn va boshqa multimedia fayllari kabi fayllarni uzatish
+	uchun foydalaniladigan qoidalar to'plamidir.  HTTP hech qanday xavfsizlikka ega emas. Qachonki foydalanuvchi o'z veb-brauzerini ochsa, bu foydalanuvchi bilvosita HTTP-dan
 	foydalanadi.
 17 PATH nima?
 	Path bu bizning qurilmamizdagi filelar turli xil ma'lumotlarning joylashgan o'rni bilan ishlash biror bir proekt qilayotgan bo'lsak shu proekt direktoriyasiga kirib birorta amal
 	bajarishimiz uchun ishlatamiz
 18 URL nima?
-	URL manzil hisoblanadi biror bir manzilga murojat qilishimiz url hisoblanadi. Nodejs url biz biror manzilni faqat hostini yoki pathnameni ajratib olib ishlashimiz uchun 
+	URL manzil hisoblanadi biror bir manzilga murojat qilishimiz url hisoblanadi. Nodejs url biz biror manzilni faqat hostini yoki pathnameni ajratib olib ishlashimiz uchun
 	kerak hisoblanadi
 19 Local modullar nima?
 	O'zimiz tomonimizdan birorta module yaratishimiz local module hisoblanadi. masalan FSni function sifatida bir joyda yozib keyin uni ko'p joylarda ishlatishimiz uchun kerak.
 20 Stream nima?
 	Stream katta ma'lumotlarni bo'lib o'qish bo'lib yozish uchun ishlatiladi. uning readible o'qish, witable yozish, va transform degan methodlari mavjud.
 21 QueryString nima?
-	Masalan serverimizga so'rov jo'natmoqchi bo'lsak querystringdan foydalanib severga URL orqali so'rov jo'natamiz va so'rovni serverda querystring bilan yechib olib shu so'rov 
+	Masalan serverimizga so'rov jo'natmoqchi bo'lsak querystringdan foydalanib severga URL orqali so'rov jo'natamiz va so'rovni serverda querystring bilan yechib olib shu so'rov
 	bo'yicha clientga ma'lumot qaytarib yuboramiz
 22 Event Listeners nima?
-	Event Listeners birornarsani eshitib turib shu bo'yicha biror hodisa bajarish event Listeners deyiladi masalan httpda serverimizni listen qilib tur va serverimiz yonsa consolega 
+	Event Listeners birornarsani eshitib turib shu bo'yicha biror hodisa bajarish event Listeners deyiladi masalan httpda serverimizni listen qilib tur va serverimiz yonsa consolega
 	nimadir chiqar deyishimiz event Listeners deyiladi.
 23 Event Emitter nima?
-	Event Emitter bu hodisalarni boshqarish uchun yordam beradi. Masalan sichqonchani uyoqdan bu yoqqa siljitishimizni bir hodisa deb qarasak shu hodisani boshqarish uchun yordam 
-	beradi. 
-		
+	Event Emitter bu hodisalarni boshqarish uchun yordam beradi. Masalan sichqonchani uyoqdan bu yoqqa siljitishimizni bir hodisa deb qarasak shu hodisani boshqarish uchun yordam
+	beradi.
+
 		const EventEmitter = require("event")
 		const evenetEmitter = new EventEmitter()
 		eventEmitter.on('start', number => {
@@ -87,7 +87,7 @@ Javascriptda asinxron kodlar yani settimeout, setintervallar callback queda saql
 		eventEmitter.emit('start', 23);
 
 24 API nima?
-	Application Programming interface - bu ikkita dasturning bir-biri bilan aloqa qilishiga imkon beruvchi dasturiy vositachi hisoblanadi. Asosan server bilan Clientni bog'lab turish 
+	Application Programming interface - bu ikkita dasturning bir-biri bilan aloqa qilishiga imkon beruvchi dasturiy vositachi hisoblanadi. Asosan server bilan Clientni bog'lab turish
 	uchun dasturiy vositadir
 25 HTTP so'rov usullari qaysilar?
 	GET so'rovi ma'lum bir URI orqali serverdan ma'lumotlarni olib kelish uchun ishlatiladi
@@ -101,14 +101,14 @@ Javascriptda asinxron kodlar yani settimeout, setintervallar callback queda saql
 
 26 OOP nima?
 	Object oriented programming - Objectga asoslanga dasturlash hisoblanadi. Biz tuzayotgan dasturimiz objectlarga, classlarga asoslanadi. Uni 4 ta uslubi mavjud bular. Biz Ikki xil
-	dasturlashdan foydalanamiz 1 FP functionla Programming, 2 OOP Object Oriented Programming 
+	dasturlashdan foydalanamiz 1 FP functionla Programming, 2 OOP Object Oriented Programming
 		1 Inheritance
 		2 Encapsulation
 		3 Abstraction
 		4 Polymorphism
 27 Inheritance haqida ma'lumot bering?
 	Inheritance bu bitta classda shablon yaratib keyin shu shablondan nasl olib  yangi class yaratish hisoblanadi.
-	
+
 	class Car {
 		constructor(price, color) {
 			this.price = price
@@ -118,7 +118,7 @@ Javascriptda asinxron kodlar yani settimeout, setintervallar callback queda saql
 		getInfo(){
 			return this.color
 		}
-	}	
+	}
 
 	class BMW extend Car {
 		constructor(model, price, color){
@@ -128,8 +128,8 @@ Javascriptda asinxron kodlar yani settimeout, setintervallar callback queda saql
 	}
 
 28 Encapsulation haqida ma'lumot bering?
-	class ichida biz methodlarni, ma'lumotlarni yashirib qo'yishimiz mumkin Private qilib ketishimiz mumkin. 
-	
+	class ichida biz methodlarni, ma'lumotlarni yashirib qo'yishimiz mumkin Private qilib ketishimiz mumkin.
+
   	class Car {
 		#klapan = 10
 		constructor(price, color) {
@@ -140,12 +140,12 @@ Javascriptda asinxron kodlar yani settimeout, setintervallar callback queda saql
 		getInfo(){
 			return this.#klapan
 		}
-	}	
-	
+	}
+
 29 Abstraction classimiz qiymat qabul qilib uni ustida ma'lum amallarni bajarib shu ma'lumotni qaytarish. Ma'lumotni abrabotka qilib shu ma'lumotni qaytarish
 	getter va setter hisoblanadi. setter ma'lumotni abrabotka qiladi getter esa shu ma'lumotni qaytarish uchun ishlatishimiz mumkin
-	
-	
+
+
 	class Car {
 		#klapan
 		constructor(price, color) {
@@ -160,46 +160,46 @@ Javascriptda asinxron kodlar yani settimeout, setintervallar callback queda saql
 		set info(x) {
 			return this.#klapan = x
 		}
-	}	
+	}
 
 
 	console.log(Car(1000, "Sariq").info("10 lik klapan"))
 
-30 Polymorphism haqida ma'lumot bering? 
-	Polymorphism ota super classdan nusxa olgan boshqa bir classni ishlashini o'zgartirishimiz Polymorphisim deyiladi. Masalan bitta Super classimiz Server desak shu classdan boshqa 
+30 Polymorphism haqida ma'lumot bering?
+	Polymorphism ota super classdan nusxa olgan boshqa bir classni ishlashini o'zgartirishimiz Polymorphisim deyiladi. Masalan bitta Super classimiz Server desak shu classdan boshqa
 	serverlarni nasl olib shu serverlarni bajaradigan vazifasini har xil qilib qo'yishimiz Polymorphism deyiladi
 
 ******************************************************************************************************************************************************************************
-		
+
 31 Express.js nima?
-	Express.js yoki oddiygina Express - bu Node.js uchun bepul, ochiq manbali, engil va tezkor veb-ilovalar tizimi. U MIT litsenziyasi ostida ochiq kodli dasturiy 
-	ta'minot sifatida chiqariladi. U bir sahifali, ko'p sahifali va gibrid veb-ilovalar va APIlarni yaratish uchun mo'ljallangan. 
-	U Node.js uchun de-fakto standart server ramkasi deb ataladi. U 2010 yilda TJ Holovaychuk tomonidan asos solingan va ishlab chiqilgan va JavaScript-da yozilgan.	
+	Express.js yoki oddiygina Express - bu Node.js uchun bepul, ochiq manbali, engil va tezkor veb-ilovalar tizimi. U MIT litsenziyasi ostida ochiq kodli dasturiy
+	ta'minot sifatida chiqariladi. U bir sahifali, ko'p sahifali va gibrid veb-ilovalar va APIlarni yaratish uchun mo'ljallangan.
+	U Node.js uchun de-fakto standart server ramkasi deb ataladi. U 2010 yilda TJ Holovaychuk tomonidan asos solingan va ishlab chiqilgan va JavaScript-da yozilgan.
 
 32 Ekspressning o'ziga xos xususiyatlari nimada?
-	Express engil, minimal va moslashuvchan Node.js veb-ilovalar ramkasi bo'lgani uchun u veb va mobil ilovalar uchun mustahkam xususiyatlar to'plamini taqdim etadi. 
+	Express engil, minimal va moslashuvchan Node.js veb-ilovalar ramkasi bo'lgani uchun u veb va mobil ilovalar uchun mustahkam xususiyatlar to'plamini taqdim etadi.
 	Quyida ushbu ramkaning ba'zi o'ziga xos xususiyatlari ro'yxati keltirilgan
 
 	1 js bir sahifali, ko'p sahifali va gibrid veb-ilovalar va API-larni loyihalash uchun ishlatilishi mumkin
 	2 Bu HTTP/RESTful so'rovlariga javob berish uchun middlewares dasturni o'rnatish imkonini beradi.
 	3 Turli xil HTTP operatsiyalarini (usul va URL) bajarish uchun routerlar bilan ishlashimiz osonlashadi
 	4 Bu argumentlarni shablonlarga o'tkazish asosida HTML sahifalarini dinamik ravishda ko'rsatish imkonini beradi
-	5 U juda tez I/O kirish/chiqish tufayli yuqori unumdorlikni ta'minlaydi. 
+	5 U juda tez I/O kirish/chiqish tufayli yuqori unumdorlikni ta'minlaydi.
 	6 veb-ilovani MVC arxitekturasida tartibga solishga imkon beradi.
 	7 U RDBMS va NoSQL ma'lumotlar bazalarini qo'llab-quvvatlaydi
 	8 U asinxron va single-threaded
 33 Nima uchun biz Express.js dan foydalanamiz?
-	Express.js — avtomatik tarzda oldindan tuzilgan Node.js tizimi boʻlib, u bizga server tomonidagi veb-ilovalarni tezroq va aqlliroq yaratishga yordam beradi. 
+	Express.js — avtomatik tarzda oldindan tuzilgan Node.js tizimi boʻlib, u bizga server tomonidagi veb-ilovalarni tezroq va aqlliroq yaratishga yordam beradi.
 	Ekspressni tanlashning asosiy sababi uning soddaligi, minimalizmi, moslashuvchanligi va kengaytirilishidir.
 34 Express.js va Node.js o'rtasidagi farq nima?
 	Node.js brauzerdan tashqari JavaScript kodini bajarish uchun foydalaniladigan ochiq manbali, RUn time environment real vaqtda ishlovchi platformadir. Node.js framework yoki
-	dasturlash tili emas; bu veb-server vazifasini bajaradigan platformadir. 
+	dasturlash tili emas; bu veb-server vazifasini bajaradigan platformadir.
 
 	Express Node.js funksionalligiga asoslangan kichik frameworkdir.
 
 ***********************************************************************************************************************************************************************************
 
-NTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT	
+NTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
 
 	1 OOP
 	2 Nodejs
@@ -209,14 +209,14 @@ NTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
 	6 Mongodb
 	7 Mongoose
 	8 Javascript
-	9 React 
+	9 React
 	10 Typescript
 
 ***********************************************************************************************************************************************************************************
 
 1 call nima?
-	Bu funksiya methodi. Bunda biz 
-	
+	Bu funksiya methodi. Bunda biz
+
 	const userinfo = {
 		name: "Mashrab"
 		const fullname = function(age) {
@@ -241,7 +241,7 @@ JAVASCRIPT
 	Data typelarni 2 turi mavjud. Bular Primitive va References typelar.
 
 2 Primitive data typega nimalar kiradi?
-	Primitive data typelarga 
+	Primitive data typelarga
 		1 String // "Tohir"
 		2 Number // 20
 		3 Boolean // True or False
@@ -254,10 +254,10 @@ JAVASCRIPT
 		  console.log(Symbol(a) === Symbol(b)); // false type teng lekin qiymat teng emas
 
 3 Reference data typega nimalar kiradi?
-	Reference data typega Object kiradi. Object ichida esa, Function, Array, Object kiradi. 
+	Reference data typega Object kiradi. Object ichida esa, Function, Array, Object kiradi.
 
 4 Primitive data type bilan Reference data type farqi nimada?
-	Primitive data typelarda faqat bitta qiymat saqlanadi va ular to'g'ridan to'g'ri xotirada (Stack) saqlanadi. Reference data type esa 2 va undan ko'p ma'lumotlarni o'zida saqlashi va 	reference data typelar nomi xotirada (Stackda) saqlanadi, heapda esa u typelarni #000, #001, #002 qilib manzil sifatida saqlanadi.  
+	Primitive data typelarda faqat bitta qiymat saqlanadi va ular to'g'ridan to'g'ri xotirada (Stack) saqlanadi. Reference data type esa 2 va undan ko'p ma'lumotlarni o'zida saqlashi va 	reference data typelar nomi xotirada (Stackda) saqlanadi, heapda esa u typelarni #000, #001, #002 qilib manzil sifatida saqlanadi.
 
 	let myObj = {name: "Ali"}
 	let name = "Ali"
@@ -270,11 +270,11 @@ JAVASCRIPT
 						}
 
 		name = "Ali"
-	
+
 5 Javascriptda o'zgaruvchilar necha xil usulda e'lon qilinadi?
 	Javascriptda o'zgaruvchilarni 4 xil usulda e'lon qilishimiz mumkin.
 		1) var
-		2) let 
+		2) let
 		3) const
 		4) Hech narsa bilan
 6 let va var farqi nimada?
@@ -284,7 +284,7 @@ JAVASCRIPT
 8 Qanaqa javascript operatorlar mavjud?
 	1-Arifmetik operatorlar
 		+, -, *, /, **, %, ++, --
-	
+
 	2- Assignment Operators (Belgilash operatorlari)
 		=, +=, -=, *=, /=, %=, **
 	3- Comparison Operators (Taqqoslash operatorlari)
@@ -293,7 +293,7 @@ JAVASCRIPT
 		&&, ||, !
 	5- Type Operators
 		typeof, instanceof
-		 
+
 9 == va === farqi nimada?
 	== bu ma'lumotni faqat qiymatini tekshiradi. === bu esa ma'lumotni ham qiymati ham type bilan tekshiradi.
 
@@ -301,25 +301,45 @@ JAVASCRIPT
 	&& "va" false qiymat topguncha ishlaydi, va  o'sha falseni chiqarib beradi.
 		console.log(true && 1 && "salom" && false && 10) // false.  agar hammasi true bo'lsa eng oxirgi trueni chiqaradi
 
-		 
+11 Null bilan Undefined farqi?
+	Variablega qiymat bermasak bu undefined, null qiymat bersak bu null. Undefined hali qiymati aniqlanmagan, null esa qiymati ataylab bo'sh qoldirilgan.
 
+12 Type Conversion nima?
+	JavaScriptda typelarni bir turdan ikkinchi turga o'zgartirishimiz Type Conversion deyiladi.
+		Masalan Number("1")
 
+13 Data type'larni Type Conversion orqali necha turga almashtirishimiz mumkin va ular qaysilar?
+	Data typelarni biz 3 ta typega o'girishimiz mumkin.
+		1 Stringa. String(123) // "123"
+		2 Numberga. Number("2") // 2
+		3 Booleanga. Boolean("Olma") // true
 
- 
+14 Data type'larni String'ga oʻzgartirish yoʻllarini ko'rsating?
+	Sting(1)
+	1 + ""
+	1.toString()
 
+15 console ga javob nima chiqadi? let x = true + 1 console.log(x)
+	Bunda Booleanga number qo'shilgan vaqti Type Conversion hodisasi amalga oshadi va true ni 1 ga o'zgartirib oladi. Shunda let x = true + 1 => let x = 1 + 1 => 2
 
+16 console.log'ga javob nima chiqadi? let x = true + "1" console.log(x)
+	Javob: "true1"
 
+17 Necha xil variable (oʻzgaruvchilar) mavjud va ular qaysilar?
+	3 xil o'zgaruvchilar mavjud.
+		1 var
+		2 let
+		3 const
 
+18 let va const farqi nimada?
+	let'ni o'zgaruvchi ma'lumotlarda ishlatamiz. const ni esa o'zgarmas ma'lumotlarda ishlatamiz.
+	let va const ES6 dan keyin qo'shilgan
 
+19 let va var farqi nimada?
+	let o'zi e'lon qilingan qatordan pastda ishlataolamiz yani u hoistinga uchramaydi.
+	var ni esa o'zi e'lon qilingan qatordan yuqorida ishlatsak bo'ladi. Yani u hoistinga uchraydi.
 
+20 Hoisting nima?
+	Biror bir e'lon qilingan o'zgaruvchi yoki funksiyani o'zi e'lon qilingan qatordan yuqorida ishlataolishimiz hoisting deyiladi.
 
-
-
-
-
-
-
-
-
-
-
+	
