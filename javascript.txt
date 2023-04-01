@@ -343,3 +343,118 @@ JAVASCRIPT
 	Biror bir e'lon qilingan o'zgaruvchi yoki funksiyani o'zi e'lon qilingan qatordan yuqorida ishlataolishimiz hoisting deyiladi.
 
 	
+**************************************************************************************************************************************************
+REACT
+
+1 Real DOM va Vertual DOM ning farqi nima
+
+	Real dom sekin yangilanadi. Birorta tugunni o'zgartirish kerak bo'lsa bevosita hamma tugunlarga murojat qilishimiz kerak. Xotirani 	ko'p egallaydi.
+	Virtula dom tez ishlaydi. Birorta tugunni o'zgartirish uchun boshqa tugunlarni bezovta qilish shart emas. xotirani kam egallaydi
+
+2 Renderning vazifasi nimada
+	Reactning maqsadi ko'p jihatdan HTMLni veb-sahifada ko'rsatishdir.
+
+	React HTML-ni veb-sahifaga ReactDOM.render() funksiyasidan foydalanib ko'rsatadi.
+
+	Render funktsiyasi
+	ReactDOM.render() funksiyasi ikkita argument, HTML kodi va HTML elementini oladi.
+
+	Funktsiyaning maqsadi belgilangan HTML elementi ichida ko'rsatilgan HTML kodini ko'rsatishdir.
+
+3 JSX nima?
+	JSX JavaScript XML degan ma'noni anglatadi.
+
+	JSX bizga React-da HTML yozish imkonini beradi.
+
+	JSX React-da HTML yozish va qo'shishni osonlashtiradi.
+4 Componentlar nima?
+	Componentlar html qaytaradigan funksiyalar hisoblanadi. Ular JavaScript funktsiyalari bilan bir xil maqsadga xizmat qiladi, lekin 	izolyatsiyada ishlaydi va HTMLni qaytaradi. Ular mustaqil va qayta ishlatishimiz mumkin. Komponentlar ikki xil bo'ladi: Class 	komponentlari va Funktsiya komponentlari, bu qo'llanmada biz Funktsiya komponentlariga e'tibor qaratamiz.
+
+5 Class componenti haqida?
+	React 16.8 dan oldin Class komponentlari React komponentidagi holat va hayot aylanishini kuzatishning yagona usuli edi. Function 	componentlar "state-less" deb atalgan yani holatsiz. 
+	Hooks qo'shilishi bilan Funktsiya komponentlari endi Class komponentlariga deyarli teng. Farqlar shunchalik kichikki, Reactda hech 	qachon Class komponentidan foydalanishga hojat qolmaydi.
+
+6 Props nima?
+	Propslar React komponentlariga uzatiladigan argumentlardir. Propslar komponentlarga HTML atributlari orqali uzatiladi.U proprtylarni 	bildiradi. Propslar Parent => Child bo'yicha ishlaydi. Yani Parent componentdan Child Componentga property (Xususiyat) ni uzatishini 	oqimini ta'minlaydi
+
+7 React list?
+	React-da siz ro'yxatlarni qandaydir tsikl bilan ko'rsatasiz.
+	JavaScript map() massiv usuli odatda afzal usul hisoblanadi.
+
+8 React Routing?
+	Reactning o'zi sahifalarni routing qilmaydi (Marshrutlamaydi) yani bir sahifadan boshqa sahifaga o'tish imkoniyatini bermaydi. 	Buning uchun bizga React-Router kutubxonasi kerak. Bu bilan biz Sahifalarni routing qilish imkoniyatiga ega bo'lamiz. 
+
+9 MEMOIZATION NIMA?
+	Yodda saqlash funksiyalar natijalarini saqlash va takroriy natijani qayta olib kelishdan qochish uchun foydalaniladigan keshlash 	shakli bo‘lib, natijalarni takroriy hisoblashga olib keladi.
+10 React Memo nima?
+	Reactda har doim componentlar State yoki Props qiymati o'zgarganda re-render bo'ladi yani qayta render bo'ladi. Lekin reactda Ota 	componentlarda biror bir sababga ko'ra qayta render re-render bo'lsa uning barcha CHILD componentlarni ham qayta render bo'ladi. 	Agar Parentning birorta childi qayta render bo'lsa ham parentning qolgan childlari ham re-render bo'ladi. Shunaqa muommoni oldini olish 	uchun React Memo kerak bo'ladi. Uning maqsadi Componentlarni eslab qolish va Parent otasi qayta render bo'lsa ham yoki uning boshqa 	child render bo'lsa ham Memodagi component qayta render bo'lmaydi Va bu componentni Memoizationga saqlab qo'yadi yani keshga. Shunda 	biror child element re-render bo'lsa boshqa childlarni qayta render bo'lishini oldini olish uchun 
+
+2 Reactjs nima?
+
+React - bu 2011-yilda Facebook tomonidan ishlab chiqilgan JavaScript-ning old qismidagi kutubxona.
+U qayta foydalanish mumkin bo'lgan UI komponentlarini yaratishda yordam beradigan komponentlarga asoslangan yondashuvga amal qiladi.
+U murakkab va interaktiv veb va mobil foydalanuvchi interfeysini ishlab chiqish uchun ishlatiladi.
+U faqat 2015 yilda ochiq manba bo'lgan bo'lsa ham, uni qo'llab-quvvatlovchi eng yirik jamoalardan biriga ega.
+
+3 Reactning xususiyatlari qanday?
+Reactning asosiy xususiyatlari quyida keltirilgan:
+
+U haqiqiy DOM o'rniga virtual DOM dan foydalanadi.
+U server tomonida renderlashdan foydalanadi.
+U bir yo'nalishli ma'lumotlar oqimini yoki ma'lumotlarni bog'lashni kuzatib boradi.
+
+4 React to'liq component hisoblanadi.Va uni qayta ishlatish mumkin
+
+5 Props nima?
+Props reactda Propertiylarning qisqartmasi hisoblanadi va Ota componentdan bola componentga malumot yubora oladi. Lekin hech qachon bola componentdan ota componentga rekvizit yetkazib berolmaydi. Bu bir yo'nalishli ma'lumotlar oqimini saqlashga yordam beradi va odatda dinamik ravishda yaratilgan ma'lumotlarni ko'rsatish uchun ishlatiladi.
+
+6 Statelar nima va u qanday ishlatilinadi?
+Shtatlar React komponentlarining yuragi hisoblanadi. Davlatlar ma'lumotlar manbai bo'lib, ular iloji boricha sodda saqlanishi kerak. Asosan, holatlar komponentlarning ko'rsatilishi va xatti-harakatlarini belgilaydigan ob'ektlardir. Ular rekvizitlardan farqli o'laroq o'zgaruvchan va dinamik va interaktiv komponentlarni yaratadilar. Ularga this.state() orqali kirish mumkin.
+
+7 React-da hodisa nima?
+React-da hodisalar sichqonchani ko'tarish, sichqonchani bosish, tugmani bosish va hokazo kabi muayyan harakatlarga qo'zg'atilgan reaktsiyalardir. Bu hodisalarni boshqarish DOM elementlaridagi hodisalarni boshqarishga o'xshaydi. Ammo sintaktik farqlar mavjud, masalan:
+
+Voqealar kichik harflar o'rniga tuya harfi yordamida nomlanadi.
+Voqealar satrlar o'rniga funksiyalar sifatida uzatiladi.
+Voqea argumenti hodisaga xos xususiyatlar to'plamini o'z ichiga oladi. Har bir hodisa turi o'z xususiyatlari va xatti-harakatlarini o'z ichiga oladi, ularga faqat voqea ishlov beruvchisi orqali kirish mumkin.
+
+8 Redux nima?
+Redux - bugungi bozorda front-end ishlab chiqish uchun eng ommabop kutubxonalardan biri. Bu JavaScript ilovalari uchun bashorat qilinadigan holat konteyneridir va butun ilovalar holatini boshqarish uchun ishlatiladi. Redux bilan ishlab chiqilgan ilovalarni sinab ko'rish oson va izchil xatti-harakatlarni ko'rsatadigan turli muhitlarda ishlashi mumkin.
+
+9 Action - bu nima sodir bo'lganligini tasvirlaydigan ob'ekt.
+Reducer - bu davlat qanday o'zgarishini aniqlash uchun joy.
+Store - Butun ilovaning davlat/obyekt daraxti Do'konda saqlanadi.
+View - shunchaki do'kon tomonidan taqdim etilgan ma'lumotlarni ko'rsatadi.
+
+
+10 Redux foydali tomonlar? 
+Redux orqali hodisalarni boshqarib ma'lumotlar uzatishini to'g'ri tartibda bajarishimiz mumkin. Va bir biri bilan relation bo'lmagan componentlarni bir biri bilan bog'lash imkonini beradi
+
+11 React Router nima?
+React Router - bu React-ning ustiga qurilgan kuchli marshrutlash kutubxonasi bo'lib, u ilovaga yangi ekranlar va oqimlarni qo'shishda yordam beradi. Bu URL manzilni veb-sahifada ko'rsatilgan ma'lumotlar bilan sinxronlashtiradi. U standartlashtirilgan tuzilma va xatti-harakatlarni saqlaydi va bir sahifali veb-ilovalarni ishlab chiqish uchun ishlatiladi. React Router oddiy APIga ega.
+
+
+
+
+12 useMemo va useEffectning farqi?
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
