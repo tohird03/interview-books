@@ -1,0 +1,35 @@
+**********************HTML*******************
+
+1 HTML nima?
+	HTML Hyper Text Markup Language, Bu Wordl Wide Web tili yani brauzerlarga har xil textlar, videolar, rasmlarni chiqarib berish uchun xizmat qiladi.
+
+2 Teglar nima?
+	HTML teglari HTML hujjatlarini yaratish va ularning xususiyatlarini ko'rsatish uchun ishlatiladi. Har bir HTML teglari turli xil xususiyatlarga ega. Teglar ikki turga bo'linadi? Juft 	va Toq. Juft teglar Ochiladi content va yopiladi. Toqlar esa faqat ochiladi ular yopilmaydi.
+
+3 HTMLda formatlash nima?
+	HTML formatlash - bu matnni yaxshiroq ko'rinish va his qilish uchun formatlash jarayoni. U matnni qalin, kursiv va tagiga chizilgan qilish uchun turli teglardan foydalanadi.
+
+4 HTML elementlari va teglar o'rtasidagi farq nima?
+	HTML elementlari matnni ko'rsatish uchun brauzer bilan bog'lanadi. Elementlar <> qavslar bilan o'ralgan bo'lsa, ular HTML teglarini hosil qiladi. Ko'pincha teglar juft bo'lib, 	atrofni o'rab turadi.
+
+5 Web sahifa ichida boshqa web sahifani qanday qilib yaratishimiz mumkin?
+	Web sahifa ichida boshqa web sahifani iframe tegi yordamida yaratishimiz mumkin.
+
+6 Bo'sh elementlar nima?
+	Tarkibsiz HTML elementlari bo'sh elementlar deb ataladi. Masalan: <br>, <hr> va boshqalar.
+
+7 Nima uchun URL HTML-da kodlangan?
+	URL manzili ASCII bo'lmagan belgilarni Internet orqali foydalanish mumkin bo'lgan formatga aylantirish uchun kodlangan, chunki URL faqat ASCII belgilar to'plamidan foydalangan holda 	Internet orqali yuboriladi. Agar URLda ASCII to'plamidan tashqari belgilar mavjud bo'lsa, URL o'zgartirilishi kerak. ASCII bo'lmagan belgilar "%" va keyin o'n oltilik raqamlar bilan 	almashtiriladi.
+
+8 <!DOCTYPE html> tegi HTML tegmi?
+	Yo'q, <!DOCTYPE html> deklaratsiyasi HTML tegi emas. HTMLning ko'p turlari mavjud, masalan. HTML 4.01 Strict, HTML 4.01 Transitional, HTML 4.01 Frameset, XHTML 1.0 Strict, XHTML 1.0 	Transitional, XHTML 1.0 Frameset, XHTML 1.1 va boshqalar. Shunday qilib, <!DOCTYPE html> veb-brauzerga HTML sahifasi haqida ko'rsatma berish uchun ishlatiladi.
+
+9 SVG nima?
+	SVG bu 2 o'lchamli vektordir. unda asosan diagrammalarni tasvirlash uchun ishlatamiz.
+
+10 HTML5 qaysi turdagi video formatlarini qo'llab-quvvatlaydi?
+	HTML 5 uchta video formatini qo'llab-quvvatlaydi:
+
+	mp4, WebM, Ogg
+11 meta teglari nima uchun foydalanamiz?
+	Ularni asosan htmlimizning formatini belgilash uchun va saytimizning seo qismi uchun foydalanamiz,

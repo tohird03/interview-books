@@ -1,0 +1,25 @@
+1 Express.js nima?
+	Express.js yoki oddiygina Express - bu Node.js uchun bepul, ochiq manbali, engil va tezkor veb-ilovalar tizimi. U MIT litsenziyasi ostida ochiq kodli dasturiy
+	ta'minot sifatida chiqariladi. U bir sahifali, ko'p sahifali va gibrid veb-ilovalar va APIlarni yaratish uchun mo'ljallangan.
+	U Node.js uchun de-fakto standart server ramkasi deb ataladi. U 2010 yilda TJ Holovaychuk tomonidan asos solingan va ishlab chiqilgan va JavaScript-da yozilgan.
+
+2 Ekspressning o'ziga xos xususiyatlari nimada?
+	Express engil, minimal va moslashuvchan Node.js veb-ilovalar ramkasi bo'lgani uchun u veb va mobil ilovalar uchun mustahkam xususiyatlar to'plamini taqdim etadi.
+	Quyida ushbu ramkaning ba'zi o'ziga xos xususiyatlari ro'yxati keltirilgan
+
+	1 js bir sahifali, ko'p sahifali va gibrid veb-ilovalar va API-larni loyihalash uchun ishlatilishi mumkin
+	2 Bu HTTP/RESTful so'rovlariga javob berish uchun middlewares dasturni o'rnatish imkonini beradi.
+	3 Turli xil HTTP operatsiyalarini (usul va URL) bajarish uchun routerlar bilan ishlashimiz osonlashadi
+	4 Bu argumentlarni shablonlarga o'tkazish asosida HTML sahifalarini dinamik ravishda ko'rsatish imkonini beradi
+	5 U juda tez I/O kirish/chiqish tufayli yuqori unumdorlikni ta'minlaydi.
+	6 veb-ilovani MVC arxitekturasida tartibga solishga imkon beradi.
+	7 U RDBMS va NoSQL ma'lumotlar bazalarini qo'llab-quvvatlaydi
+	8 U asinxron va single-threaded
+3 Nima uchun biz Express.js dan foydalanamiz?
+	Express.js — avtomatik tarzda oldindan tuzilgan Node.js tizimi boʻlib, u bizga server tomonidagi veb-ilovalarni tezroq va aqlliroq yaratishga yordam beradi.
+	Ekspressni tanlashning asosiy sababi uning soddaligi, minimalizmi, moslashuvchanligi va kengaytirilishidir.
+4 Express.js va Node.js o'rtasidagi farq nima?
+	Node.js brauzerdan tashqari JavaScript kodini bajarish uchun foydalaniladigan ochiq manbali, RUn time environment real vaqtda ishlovchi platformadir. Node.js framework yoki
+	dasturlash tili emas; bu veb-server vazifasini bajaradigan platformadir.
+
+	Express Node.js funksionalligiga asoslangan kichik frameworkdir.

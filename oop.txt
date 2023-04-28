@@ -1,0 +1,69 @@
+26 OOP nima?
+	Object oriented programming - Objectga asoslanga dasturlash hisoblanadi. Biz tuzayotgan dasturimiz objectlarga, classlarga asoslanadi. Uni 4 ta uslubi mavjud bular. Biz Ikki xil
+	dasturlashdan foydalanamiz 1 FP functionla Programming, 2 OOP Object Oriented Programming
+		1 Inheritance
+		2 Encapsulation
+		3 Abstraction
+		4 Polymorphism
+27 Inheritance haqida ma'lumot bering?
+	Inheritance bu bitta classda shablon yaratib keyin shu shablondan nasl olib  yangi class yaratish hisoblanadi.
+
+	class Car {
+		constructor(price, color) {
+			this.price = price
+			this.color = color
+		}
+
+		getInfo(){
+			return this.color
+		}
+	}
+
+	class BMW extend Car {
+		constructor(model, price, color){
+			super(price, color)
+			this.model = model
+		}
+	}
+
+28 Encapsulation haqida ma'lumot bering?
+	class ichida biz methodlarni, ma'lumotlarni yashirib qo'yishimiz mumkin Private qilib ketishimiz mumkin.
+
+  	class Car {
+		#klapan = 10
+		constructor(price, color) {
+			this.price = price
+			this.color = color
+		}
+
+		getInfo(){
+			return this.#klapan
+		}
+	}
+
+29 Abstraction classimiz qiymat qabul qilib uni ustida ma'lum amallarni bajarib shu ma'lumotni qaytarish. Ma'lumotni abrabotka qilib shu ma'lumotni qaytarish
+	getter va setter hisoblanadi. setter ma'lumotni abrabotka qiladi getter esa shu ma'lumotni qaytarish uchun ishlatishimiz mumkin
+
+
+	class Car {
+		#klapan
+		constructor(price, color) {
+			this.price = price
+			this.color = color
+		}
+
+		get info(){
+			return this.#klapan
+		}
+
+		set info(x) {
+			return this.#klapan = x
+		}
+	}
+
+
+	console.log(Car(1000, "Sariq").info("10 lik klapan"))
+
+30 Polymorphism haqida ma'lumot bering?
+	Polymorphism ota super classdan nusxa olgan boshqa bir classni ishlashini o'zgartirishimiz Polymorphisim deyiladi. Masalan bitta Super classimiz Server desak shu classdan boshqa
+	serverlarni nasl olib shu serverlarni bajaradigan vazifasini har xil qilib qo'yishimiz Polymorphism deyiladi

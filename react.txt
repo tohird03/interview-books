@@ -1,0 +1,117 @@
+REACT
+
+Reactning asosiy xususiyatlari quyida keltirilgan:
+
+U haqiqiy DOM o'rniga virtual DOM dan foydalanadi.
+U server tomonida renderlashdan foydalanadi.
+U bir yo'nalishli ma'lumotlar oqimini yoki ma'lumotlarni bog'lashni kuzatib boradi.
+React to'liq component hisoblanadi.Va uni qayta ishlatish mumkin
+
+1 Real DOM va Vertual DOM ning farqi nima
+
+	Real dom sekin yangilanadi. Birorta tugunni o'zgartirish kerak bo'lsa bevosita hamma tugunlarga murojat qilishimiz kerak. Xotirani 	ko'p egallaydi.
+	Virtula dom tez ishlaydi. Birorta tugunni o'zgartirish uchun boshqa tugunlarni bezovta qilish shart emas. xotirani kam egallaydi
+
+2 Renderning vazifasi nimada
+	Reactning maqsadi ko'p jihatdan HTMLni veb-sahifada ko'rsatishdir.
+
+	React HTML-ni veb-sahifaga ReactDOM.render() funksiyasidan foydalanib ko'rsatadi.
+
+	Render funktsiyasi
+	ReactDOM.render() funksiyasi ikkita argument, HTML kodi va HTML elementini oladi.
+
+	Funktsiyaning maqsadi belgilangan HTML elementi ichida ko'rsatilgan HTML kodini ko'rsatishdir.
+
+3 JSX nima?
+	JSX JavaScript XML degan ma'noni anglatadi.
+
+	JSX bizga React-da HTML yozish imkonini beradi.
+
+	JSX React-da HTML yozish va qo'shishni osonlashtiradi.
+4 Componentlar nima?
+	Componentlar html qaytaradigan funksiyalar hisoblanadi. Ular JavaScript funktsiyalari bilan bir xil maqsadga xizmat qiladi, lekin 	izolyatsiyada ishlaydi va HTMLni qaytaradi. Ular mustaqil va qayta ishlatishimiz mumkin. Komponentlar ikki xil bo'ladi: Class 	komponentlari va Funktsiya komponentlari, bu qo'llanmada biz Funktsiya komponentlariga e'tibor qaratamiz.
+
+5 Class componenti haqida?
+	React 16.8 dan oldin Class komponentlari React komponentidagi holat va hayot aylanishini kuzatishning yagona usuli edi. Function 	componentlar "state-less" deb atalgan yani holatsiz.
+	Hooks qo'shilishi bilan Funktsiya komponentlari endi Class komponentlariga deyarli teng. Farqlar shunchalik kichikki, Reactda hech 	qachon Class komponentidan foydalanishga hojat qolmaydi.
+
+6 Props nima?
+	Propslar React komponentlariga uzatiladigan argumentlardir. Propslar komponentlarga HTML atributlari orqali uzatiladi.U proprtylarni 	bildiradi. Propslar Parent => Child bo'yicha ishlaydi. Yani Parent componentdan Child Componentga property (Xususiyat) ni uzatishini 	oqimini ta'minlaydi
+
+7 React list?
+	React-da siz ro'yxatlarni qandaydir tsikl bilan ko'rsatasiz.
+	JavaScript map() massiv usuli odatda afzal usul hisoblanadi.
+
+8 React Routing?
+	Reactning o'zi sahifalarni routing qilmaydi (Marshrutlamaydi) yani bir sahifadan boshqa sahifaga o'tish imkoniyatini bermaydi. 	Buning uchun bizga React-Router kutubxonasi kerak. Bu bilan biz Sahifalarni routing qilish imkoniyatiga ega bo'lamiz.
+
+9 MEMOIZATION NIMA?
+	Yodda saqlash funksiyalar natijalarini saqlash va takroriy natijani qayta olib kelishdan qochish uchun foydalaniladigan keshlash 	shakli bo‘lib, natijalarni takroriy hisoblashga olib keladi.
+
+10 React Memo nima?
+	Reactda har doim componentlar State yoki Props qiymati o'zgarganda re-render bo'ladi yani qayta render bo'ladi. Lekin reactda Ota 	componentlarda biror bir sababga ko'ra qayta render re-render bo'lsa uning barcha CHILD componentlarni ham qayta render bo'ladi. 	Agar Parentning birorta childi qayta render bo'lsa ham parentning qolgan childlari ham re-render bo'ladi. Shunaqa muommoni oldini 	olish uchun React Memo kerak bo'ladi. Uning maqsadi Componentlarni eslab qolish va Parent otasi qayta render bo'lsa ham yoki uning 	boshqa child render bo'lsa ham Memodagi component qayta render bo'lmaydi Va bu componentni Memoizationga saqlab qo'yadi yani keshga. Shunda 	biror child element re-render bo'lsa boshqa childlarni qayta render bo'lishini oldini olish uchun
+
+11 Hook nima?
+	Hooklar bizga state va lifecycle methodlari kabi React xususiyatlariga "ulanish" imkonini beradi. 
+12 useState hook nima uchun ishlatilinadi?
+	useState asosan component holatini kuzatish imkonini beradi. unda asosan component uchun statelar (data) va xususiyatlar Saqlaydi.
+13 useEffect
+	unda side effectlarni amalga oshirish uchun ishlatilinadi. Masalan apiga murojat qilish shunga o'xshash
+14 useContext nima?
+	unda biz ma'lumotlarni bir componentdan ikkinchi componentga o'tkazishimiz mumkin va m.n 3 ta ichma ich component bobosidan nevarasiga ma'lumot o'tkazish uchun propdan foydalanish kerak. uning o'rniga context ishlatganimiz ma'qul
+
+15 Har bir React componentini kuzatishingiz va boshqarishingiz mumkin bo'lgan 3 ta lifecycle mavjud.
+	1. Mounting
+	2. Updating
+	3. unMounting
+
+16 Mounting nima?
+	Mounting DOMga elementlarni joylashtirishni anglatadi.
+  Mountingda 4 ta built-in method bilan componentlarni DOMga joylashtirishimiz mumkin.
+    constructor()
+    getDerivedStateFromProps()
+    render()
+    componentDidMount()
+
+    render usuli har doim chaqiriladi qolganlari esa ixtiyoriy.:
+
+    1.1 constructor -- eng birinchi component ishga tushurilganda bo'lganda chaqiriladi. U boshlang'ich qiymatlar, datalarni o'rnatish uchun kerak.
+
+    1.2 getDerivedStateFromProps -- esa DOMga elementarni ko'rsatishdan avval chaqiriladi. Bu dastlabki propslar asosida statelarni set qilish uchun ishlatilinadi.
+
+    1.3 render -- har doim chaqirilishi kerak va uning vazifasi HTMLni DOMga chiqarishdir
+
+    1.4 componentDidMount -- bu componentlarni DOMga ko'rsatilgandan keyin chaqiriladi. Masalan settimeoutimiz bor u 1 sekundan keyin ishlaydi. birinchi jarayon bu constructor keyin getDerivedStateFromProps keyin render keyin componentimiz DOMga chiqadi va 1 sekundan keyin componentDidMount ishlab DOMga component uchun qo'shimcha element qo'shadi, Yoki qanaqadir vazifani bajaradi.
+
+  Mountingni vazifasi DOMga componentlarimni chiqarishimiz uchun kerak.
+
+17 Updating nima?
+  Updating componentlarni yangilashni anglatadi.
+
+  Lifecyclening keyingi bosqichi bu componentlarni yangilanishidir. Componentlarning state yoki propslari o'zgarganda component yangilanadi. Reactda component yangilanganda ushbu tartibda chiqariladigan 5 ta built-in (class componentning ichida bor, yasalgan, tayyor, uni biz yaratmaymiz) methodlar mavjud.
+
+  getDerivedStateFromProps()
+  shouldComponentUpdate()
+  render()
+  getSnapshotBeforeUpdate()
+  componentDidUpdate()
+
+  2.1 getDerivedStateFromProps -- Bu propslar orqali state objectini o'rnatish uchun built-in methoddir. Birinchi update bo'lganda render bo'lgandagi boshlang'ich propslarni olib state  objectni qayta o'rnatadi.
+
+  2.2 shouldComponentUpdate -- bu update bo'lgan vaqtda React renderlashda davom etishi yoki davom etmasligini belgilaydigan mantiqiy qiymatni qaytarishingiz mumkin..
+
+  shouldComponentUpdate() {
+    return false;
+  }
+
+  2.3 render -- bu component update bo'lganda qayta chaqiriladi, va DOMga componentlarimni qayta render qilib beradi. Masalan bitta button bosilganda bir text rangini o'zgartir desak, birinchi onChangeda initial stateni o'zgartiramiz, oldin aytganimizdek, qachonki statelarimiz o'zgaradigan bo'lsa component qayta render bo'ladi va text rangini o'zgartirib qayta render qiladi.
+
+  2.4 getSnapshotBeforeUpdate -- bu built-in method orqali biz update bo'lgandan keyin yani update render tugab componentlarimiz DOMga chiqqanidan keyin ham componentimizning update bo'lishidan oldingi state va propslarini olishimiz mumkin ya'ni yangilanishdan keyin ham yangilanishdan oldingi qiymatlar qandayligini tekshirishingiz mumkin. Agar getSnapshotBeforeUpdate() usuli mavjud bo'lsa, komponentDidUpdate() usulini ham qo'shishingiz kerak, aks holda siz xatoga yo'l qo'yasiz
+
+  2.5 componentDidUpdate -- Component DOMda yangilangandan keyin componentDidUpdate usuli chaqiriladi. Buning vazifasi, componentDidMountda o'zgarishin harakati bo'lishi bilan bu componentDidUpdate ishlab ketadi.
+
+18 unMounting nima?
+
+
+19 Statelar nima?
+  Statlar React komponentlarining yuragi hisoblanadi. Statelar ma'lumotlar manbai bo'lib, ular iloji boricha sodda saqlanishi kerak. Asosan, statelar komponentlarning ko'rsatilishi va xatti-harakatlarini belgilaydigan ob'ektlardir. Ular propslardan farqli o'laroq o'zgaruvchan va dinamik va interaktiv komponentlarni yaratadilar. Ularga this.state() orqali kirish mumkin.

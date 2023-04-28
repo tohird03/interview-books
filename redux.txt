@@ -1,0 +1,11 @@
+8 Redux nima?
+Redux - bugungi bozorda front-end ishlab chiqish uchun eng ommabop kutubxonalardan biri. Bu JavaScript ilovalari uchun bashorat qilinadigan holat konteyneridir va butun ilovalar holatini boshqarish uchun ishlatiladi. Redux bilan ishlab chiqilgan ilovalarni sinab ko'rish oson va izchil xatti-harakatlarni ko'rsatadigan turli muhitlarda ishlashi mumkin.
+
+9 Action - bu nima sodir bo'lganligini tasvirlaydigan ob'ekt.
+Reducer - bu davlat qanday o'zgarishini aniqlash uchun joy.
+Store - Butun ilovaning davlat/obyekt daraxti Do'konda saqlanadi.
+View - shunchaki do'kon tomonidan taqdim etilgan ma'lumotlarni ko'rsatadi.
+
+
+10 Redux foydali tomonlar?
+Redux orqali hodisalarni boshqarib ma'lumotlar uzatishini to'g'ri tartibda bajarishimiz mumkin. Va bir biri bilan relation bo'lmagan componentlarni bir biri bilan bog'lash imkonini beradi
