@@ -52,7 +52,7 @@ React to'liq component hisoblanadi.Va uni qayta ishlatish mumkin
 	Reactda har doim componentlar State yoki Props qiymati o'zgarganda re-render bo'ladi yani qayta render bo'ladi. Lekin reactda Ota 	componentlarda biror bir sababga ko'ra qayta render re-render bo'lsa uning barcha CHILD componentlarni ham qayta render bo'ladi. 	Agar Parentning birorta childi qayta render bo'lsa ham parentning qolgan childlari ham re-render bo'ladi. Shunaqa muommoni oldini 	olish uchun React Memo kerak bo'ladi. Uning maqsadi Componentlarni eslab qolish va Parent otasi qayta render bo'lsa ham yoki uning 	boshqa child render bo'lsa ham Memodagi component qayta render bo'lmaydi Va bu componentni Memoizationga saqlab qo'yadi yani keshga. Shunda 	biror child element re-render bo'lsa boshqa childlarni qayta render bo'lishini oldini olish uchun
 
 11 Hook nima?
-	Hooklar bizga state va lifecycle methodlari kabi React xususiyatlariga "ulanish" imkonini beradi. 
+	Hooklar bizga state va lifecycle methodlari kabi React xususiyatlariga "ulanish" imkonini beradi.
 12 useState hook nima uchun ishlatilinadi?
 	useState asosan component holatini kuzatish imkonini beradi. unda asosan component uchun statelar (data) va xususiyatlar Saqlaydi.
 13 useEffect
@@ -108,10 +108,41 @@ React to'liq component hisoblanadi.Va uni qayta ishlatish mumkin
 
   2.4 getSnapshotBeforeUpdate -- bu built-in method orqali biz update bo'lgandan keyin yani update render tugab componentlarimiz DOMga chiqqanidan keyin ham componentimizning update bo'lishidan oldingi state va propslarini olishimiz mumkin ya'ni yangilanishdan keyin ham yangilanishdan oldingi qiymatlar qandayligini tekshirishingiz mumkin. Agar getSnapshotBeforeUpdate() usuli mavjud bo'lsa, komponentDidUpdate() usulini ham qo'shishingiz kerak, aks holda siz xatoga yo'l qo'yasiz
 
-  2.5 componentDidUpdate -- Component DOMda yangilangandan keyin componentDidUpdate usuli chaqiriladi. Buning vazifasi, componentDidMountda o'zgarishin harakati bo'lishi bilan bu componentDidUpdate ishlab ketadi.
+  2.5 componentDidUpdate -- Component DOMda yangilangandan keyin componentDidUpdate usuli chaqiriladi. Buning vazifasi, componentDidMountda o'zgarish harakati bo'lishi bilan bu componentDidUpdate ishlab ketadi.
 
 18 unMounting nima?
+  Reactda biror component o'chirish sikli hisoblanadi. Unda bitta built-in method mavjud. Unmount biror component o'chirilganda ishlaydi.
 
+  componentWillUnmount()
+
+  3.1 ComponentWillUnmount usuli komponent DOMdan olib tashlanishi arafasida bo'lganda chaqiriladi.
 
 19 Statelar nima?
   Statlar React komponentlarining yuragi hisoblanadi. Statelar ma'lumotlar manbai bo'lib, ular iloji boricha sodda saqlanishi kerak. Asosan, statelar komponentlarning ko'rsatilishi va xatti-harakatlarini belgilaydigan ob'ektlardir. Ular propslardan farqli o'laroq o'zgaruvchan va dinamik va interaktiv komponentlarni yaratadilar. Ularga this.state() orqali kirish mumkin.
+
+20 Virtual DOM?
+  Virtual DOM - bu haqiqiy DOMning virtual ko'rinishi xotirada saqlanadigan va ReactDOM kabi kutubxona tomonidan haqiqiy DOM bilan sinxronlangan tushunchadir.
+  Virtual DOM - bu xotiradagi haqiqiy DOMni ifodalovchi ob'ekt.
+
+21 JSX ni JSga o'girish? transplie
+  React  kodi JSX da yozilgan, lekin hech bir brauzer JSX ni to'g'ridan-to'g'ri o'qiy olmaydi, chunki ular faqat o'qish uchun mo'ljallangan oddiy JavaScript-ga qurilgan.
+  Shunday qilib, brauzer uni ishga tushirishi uchun JSX-ni JavaScript-ga o'tkazish uchun Babel kabi kutibxonalardan foydalanishimiz kerak.
+
+22 Keylar nega kerak?
+  Key Reactga qaysi elementlar o‘zgargan, qo‘shilgan yoki o‘chirilganligini aniqlashga yordam beradi, bu esa unga allaqachon mavjud DOM elementlarini qayta ishlatish imkonini beradi va shu bilan unumdorlikni oshiradi.
+
+23 React-da refsning ahamiyati nimada?
+  Refs - bu state o'zgaruvchilari kabi renderlar o'rtasida ma'lumotlarni saqlab qolish imkonini beruvchi o'zgaruvchilar, lekin state o'zgaruvchilaridan farqli o'laroq, refslarni yangilash komponentning qayta ko'rsatilishiga olib kelmaydi.
+  Reflar odatda DOM elementlariga havolalarni saqlash uchun ishlatiladi, lekin ular bilan cheklanmagan.
+
+24 Reactni ishlashini yaxshilash uchun nimalar qilishimiz kerak?
+  useMemo dan foydalanish
+
+  useMemo - bu protsessor-qimmatbaho funktsiyalarni keshlash uchun ishlatiladigan React hooki. Komponentning qayta renderlash tufayli qayta-qayta chaqiriladigan CPU-Expensive funksiya sekin ko'rsatishga olib kelishi mumkin.
+  useMemo hooki bunday funksiyalarni keshlash uchun ishlatilishi mumkin. UseMemo-dan foydalanib, CPU-Expensive funksiyasi faqat kerak bo'lganda chaqiriladi.
+
+  useCallback xuddi shunday natijaga erishish uchun ishlatilishi mumkin.
+
+  Lazy loading - bu React ilovasini yuklash vaqtini qisqartirish uchun ishlatiladigan usul. Bu foydalanuvchi ilova boʻylab harakatlanayotganda komponentlarni yuklash orqali veb-ilovaning ishlash xavfini minimal darajaga kamaytirishga yordam beradi.
+
+

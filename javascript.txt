@@ -116,9 +116,9 @@
 
 19 Necha xil variable (oʻzgaruvchilar) mavjud va ular qaysilar?
 	3 xil o'zgaruvchilar mavjud.
-		1 var
-		2 let
-		3 const
+		1 var //key - kalit so'z
+		2 let //key
+		3 const //key
 
 20 let va const farqi nimada?
 	let'ni o'zgaruvchi ma'lumotlarda ishlatamiz. const ni esa o'zgarmas ma'lumotlarda ishlatamiz.
@@ -130,3 +130,8 @@
 
 22 Hoisting nima?
 	Biror bir e'lon qilingan o'zgaruvchi yoki funksiyani o'zi e'lon qilingan qatordan yuqorida ishlataolishimiz hoisting deyiladi.
+
+23 Declared o'zgaruvchi e'lon qilish?
+	let var const bilan o'zgaruvchi e'lon qilsak bu declared.
+24 Undeclared o'zgaruvchi e'lon qilish?
+	let var const siz o'zgaruvchi e'lon qilish.
